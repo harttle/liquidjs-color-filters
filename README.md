@@ -25,7 +25,7 @@ import Liquid from 'liquidjs'
 import { liquidColorFilters } from 'liquidjs-color-filters'
 
 const liquid = new Liquid()
-liquid.plugin(colorPlugin)
+liquid.plugin(liquidColorFilters)
 
 liquid.parseAndRender('{{ "rgba(122, 181, 92, 0.5)" | color_to_hsl }}')
 .then(html => console.log(html)) // hsla(100, 38%, 54%, 0.5)
