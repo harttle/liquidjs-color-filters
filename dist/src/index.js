@@ -1,6 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const color_1 = require("color");
+const color_1 = __importDefault(require("color"));
 function liquidColorFilters() {
     this.registerFilter('color_to_rgb', (str) => {
         try {
