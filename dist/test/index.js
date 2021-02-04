@@ -7,8 +7,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const liquidjs_1 = require("liquidjs");
+const liquidjs_1 = __importDefault(require("liquidjs"));
 const chai_1 = require("chai");
 const index_1 = require("../src/index");
 describe('color filters', function () {
